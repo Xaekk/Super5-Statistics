@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.test</groupId>
-  <artifactId>com.test.webbnet</artifactId>
+  <artifactId>webbnet</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>com.test.webbnet Maven Webapp</name>
@@ -19,6 +19,17 @@
     	<artifactId>spring-context</artifactId>
     	<version>4.3.7.RELEASE</version>
     </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>4.3.7.RELEASE</version>
+    </dependency>
+     <!-- JSTL -->
+     <dependency>
+         <groupId>javax.servlet</groupId>
+         <artifactId>jstl</artifactId>
+         <version>1.2</version>
+     </dependency>
   </dependencies>
   <build>
     <finalName>com.test.webbnet</finalName>
