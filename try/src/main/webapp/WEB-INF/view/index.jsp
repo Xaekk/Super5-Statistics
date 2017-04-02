@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello World!y</h2>
+<h2>${model.name}</h2>
 </body>
 </html>
