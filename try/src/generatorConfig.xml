@@ -7,6 +7,8 @@
     <javaModelGenerator targetPackage="com.domain.entity" targetProject="try" />
     <sqlMapGenerator targetPackage="com.domain.map" targetProject="try" />
     <javaClientGenerator targetPackage="com.domain.dao" targetProject="try" type="XMLMAPPER" />
-    <table schema="newtable" tableName="newtable" />
+    <table schema="newtable" tableName="newtable" >
+    
+    </table>
   </context>
 </generatorConfiguration>
