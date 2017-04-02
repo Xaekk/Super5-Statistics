@@ -1,4 +1,4 @@
-package com.domain.dao;
+package com.domain.mapper;
 
 import com.domain.entity.Newtable;
 import com.domain.entity.NewtableExample;
