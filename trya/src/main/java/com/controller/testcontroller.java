@@ -23,38 +23,11 @@ public class testcontroller {
 	public String test(Model model) {
 		System.out.println("function test start");
 		System.out.println(testService.test());
-
-//		try {
-//			reader = Resources.getResourceAsReader("com/domain/Configuration.xml");
-//			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-//
-//		SqlSession session = sqlSessionFactory.openSession();
-//		try {
-//			Newtable table = (Newtable) session.selectOne("com.domain.dao.normal.NewtableMapper.selectByPrimaryKey", 1);
-//			System.out.println("data in database : name = " + table.getName());
-//			System.out.println("data in database : age = " + table.getAge());
-//		} finally {
-//			session.close();
-//		}
-
-		
-		
+		model.addAttribute("name", "SUCCESS!!!!!");
+		model.addAttribute("name2", "goood2");
+		System.out.println(model);
 		System.out.println("function test over");
-		model.addAttribute("name", "goood");
-		return "index";
+		return "NewFile";
 	}
 
-//	private static SqlSessionFactory sqlSessionFactory;
-//	private static Reader reader;
-//
-//	public static SqlSessionFactory getSession() {
-//		return sqlSessionFactory;
-//	}
-//
-//	public static void main(String[] args) {
-//
-//	}
 }
