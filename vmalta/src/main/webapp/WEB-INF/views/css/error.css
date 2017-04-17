@@ -1,0 +1,42 @@
+﻿body {
+	padding: 0;
+	margin: 0;
+	background: #eaeaea;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.errorpage { 
+	width:600px;
+	padding: 30px;
+	margin: 20px auto;
+	background:#FFF;
+	border:#cccccc 1px solid;
+}
+.errorpage .content {
+	width:360px;
+	float:left;
+}
+.errorpage h1 {
+	font: 2.25em 'UbuntuLight', Arial, Helvetica, Sans-Serif !important;
+	margin: 0 0 10px;
+	float:left;
+	width:100%;
+    color: #d5160c;
+}
+.errorpage span {
+	font: 1.125em 'UbuntuLight', Arial, Helvetica, Sans-Serif !important;
+	color:#1f1f1f;
+	float:left;
+	width:100%;
+    margin: 0 0 20px;
+}
+.errorpage .logo {
+	margin:0;
+	padding:25px;
+	float:right;
+}
+
+.clear 
+{
+    clear: both;
+}

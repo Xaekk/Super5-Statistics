@@ -1,0 +1,63 @@
+﻿#aspnetForm > * 
+{
+    display: none;
+}
+
+.printmap  
+{
+    font: 0.85em Arial, Helvetica, sans-serif;
+}
+
+.printmap .subgurim_gMap 
+{
+    overflow: hidden !important;
+}
+
+.printmap  > div, .printmap  > div > div
+{
+    width: 100% !important;
+}
+
+.printmap #directions_info_mcontentwrapper 
+{
+    overflow:auto !important;
+    height: auto !important;
+    width: 100% !important;
+}
+
+.printmap #directions_info_contentwrapper 
+{
+    padding: 0 !important;
+    top: 0 !important;
+}
+
+.printmap div.gmnoprint 
+{
+    display: none !important;
+}
+
+.printmap img.gmnoscreen
+{
+    display: none !important;
+}
+
+.printmap a 
+{
+    color: #000;
+}
+
+.printmap table 
+{
+    font-size: 1em;
+}
+
+.printmap 
+{
+    display: block !important;
+}
+
+
+.printmap div img[src='http://maps.gstatic.com/mapfiles/mapcontrols3d6.png']
+{
+    display: none;
+}

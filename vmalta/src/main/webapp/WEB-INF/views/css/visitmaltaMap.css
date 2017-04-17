@@ -1,0 +1,334 @@
+/* ___________ MAP STYLESHEET */
+.printmap { display: none; }
+.gMapContainer.startingPosition { overflow:hidden; position: absolute; top:-9999px; left:-9999px; }
+/*.gis_map { width: 930px; height: 380px; }*/
+.gis_map { no-repeat; position:relative; color: #797879; }
+.gis_map .showonmap { width: 220px; position: absolute; top: 40px; right: 12px; }
+.gis_map .showonmap h1 { display: block; font: 0.875em 'UbuntuLight', Arial, Helvetica, Sans-Serif !important; margin: 0 0 0 40px; padding-top: 14px; width: 166px; height: 35px; background:url("../imgs/gis/drop_open.png") no-repeat scroll transparent right center; cursor: pointer; }
+.gis_map .showonmap h1.arrowup { background:url("../imgs/gis/drop_up.png") no-repeat scroll transparent right center; }
+.gis_map .showonmap ul, .gis_map .showonmap li { margin:0; padding:0; list-style:none; }
+.gis_map .showonmap li { overflow: hidden; }
+.gis_map .showonmap ul.menu ul { padding: 0 0 0 25px; }
+.gis_map .showonmap ul.menu ul .CheckBoxLabelClass { margin: 5px 0 0 0; }
+.gis_map .showonmap ul.the_menu li { font-weight:bold; }
+.gis_map .showonmap ul.the_menu li ul li { font-weight:normal; }
+.gis_map .showonmap .menu_class { background:url(../imgs/gis/btn.png) no-repeat; margin: auto auto -18px; height: 48px; width: 220px; }
+.gis_map .showonmap .menu_class .checkuncheck { position: absolute; left: 15px; top: 14px; display: block; width: 17px; height: 17px; text-decoration: none;}
+.gis_map .showonmap .menu_class .check { background: url(../imgs/gis/tick.png) no-repeat scroll 0 0 transparent; }
+.gis_map .showonmap .menu_class .uncheck { background: url(../imgs/gis/tick_empty.png) no-repeat scroll 0 0 transparent; }
+.gis_map .showonmap .the_menu { font: 0.688em 'UbuntuLight', Arial, Helvetica, Sans-Serif; display:none; width:210px; height:200px; overflow:auto; position: relative; padding-top: 10px; float: left; }
+.gis_map .showonmap .the_menu li label { background: url("../imgs/gis/drop_closed.png") no-repeat scroll 0 center transparent; color: #797879; display: block; margin-left: 25px; margin-top: 5px; padding: 5px 0 5px 20px; text-decoration: none; font-weight:bold; }
+.gis_map .showonmap .the_menu li label:hover { color: #a40a02; }
+.gis_map .showonmap .the_menu li label.arrowdown { background:url("../imgs/gis/drop_open.png") no-repeat scroll transparent left center; }
+.gis_map .showonmap .scroll { background: url("../imgs/gis/bg.png") no-repeat scroll 0 -24px transparent; height: 275px; padding-top:15px; }
+.gis_map .icons a { margin-left:3px; }
+.gis_map .icons { position:absolute; right:213px; top:8px; z-index: 25; }
+.gis_map .icons .icon-overviewmap {	width: 26px; height:23px;	background:url(../imgs/gis/btn_compass.png) no-repeat left top; float:left;}
+.gis_map .icons .icon-print { width: 26px; height:23px; background:url(../imgs/gis/btn_print.png) no-repeat left top; float:left; }
+.gis_map .icons .icon-save { 	width: 26px; height:23px; background:url(../imgs/gis/btn_save.png) no-repeat left top; float:left; } 
+.gis_map .icons .icon-email { width: 26px; height:23px; background:url(../imgs/gis/btn_email.png) no-repeat left top; float:left; }
+.gis_map .icons .icon-close { width: 26px; height:23px; background:url(../imgs/gis/btn_close.png) no-repeat left top; float:left; }
+.gis_map .icons a:hover { background-position: left -23px; cursor:pointer; }
+.gis_map .icons a.notavailable { background-position: left bottom; cursor: default; }
+
+.gis_map .showonmap .rows td input[type='checkbox'] { height:50px; vertical-align:middle; }
+.gis_map .showonmap .rows td span { vertical-align:middle; }
+/*.gis_map .gis_map_content { height: 380px; }*/
+.gis_map .showonmap .the_menu li input.CheckBoxClass { display: none; }
+.gis_map .showonmap .the_menu li label.CheckBoxLabelClass { background: url(../imgs/gis/tick_empty.png) no-repeat scroll left 50% transparent; line-height: 1em; margin: 5px 0 0 20px; padding: 4px 0 4px 25px; vertical-align: middle; width: auto; font-weight: normal; }
+.gis_map .showonmap .the_menu li label.CheckBoxLabelClass:hover, .gis_map .showonmap .the_menu li label.RadioLabelClass:hover { text-decoration: none; }
+.gis_map .showonmap .the_menu li label.LabelSelected { background:url(../imgs/gis/tick.png) no-repeat scroll left 50% transparent; }
+.gis_map .showonmap .the_menu label { -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; cursor: pointer; }
+#gis_map #showonmap h1:hover, .menu li label:hover { cursor:pointer; color:#C20904; }
+.mapsearch { float: left; padding: 10px 0 0 20px; }
+div.mapsearch input { color: #797879; font: 0.688em/1.6em Arial, Helvetica, Sans-Serif; height:20px; width:150px; padding: 1px 2px 1px 5px; border:0; float:left; vertical-align: middle; }
+.mapsearch span { background: url("../imgs/gis/btn_search.png") no-repeat left top #FFFFFF;	width:25px;	height:22px; float:left; display:block; }
+.mapsearch span.activesearch { background-position: left bottom; }
+.mapsearch .search:hover { cursor:pointer; }
+
+
+.gis_map .gis_map_directions { position: relative; margin: 10px 0 0 0; float: left; }
+.gis_map .gis_map_directions h4 { font: normal 1.875em 'UbuntuLight', Arial, Helvetica, Sans-Serif; color: #373737; margin: 0 0 5px 5px; line-height: 1.05em; float: left; }
+.gis_map .scroll_wrapper { float: left; margin: 5px 0 10px 0; padding: 2px 10px 0 10px; }
+
+/* WITH ORDERED LIST */
+.gis_map .directions_info ol { margin: -5px 0 0 10px; padding: 0 0 5px 10px; color: #2a2a2a; font-size: 0.9em; }
+.gis_map .directions_info ol li { padding: 0 0 10px 0; margin: 10px 0 0 0; border-bottom: 1px solid #e4e4e4; position: relative; }
+.gis_map .directions_info .direction { display: block; }
+.gis_map .directions_info .subnote { display: block; }
+.gis_map .directions_info .distance { position: absolute; background: white; bottom: -6px; right: 0; color: #c7c6c6; font: 0.714em Arial, Helvetica, sans-serif; padding: 0 0 0 10px; }
+
+/* WITH TABLES AS OUTPUTTED BY API */
+.gis_map .directions_info table { margin: -5px 0 0 10px; padding: 0 0 5px 10px; color: #2a2a2a; font-size: 0.85em; width: 560px !important; border: none !important; background: none !important; margin: 0 !important; padding: 0 !important; }
+.gis_map .directions_info table a { text-decoration: none; }
+.gis_map .directions_info table td { padding: 5px 15px !important; margin: 10px 0 0 0; border-bottom: 1px solid #e4e4e4; border-top: none !important; position: relative; }
+.gis_map .directions_info table tr:hover td { background-color: #f4f4f4; }
+.gis_map .directions_info table .google_note { font-size: 0.8em; color: #777; }
+.gis_map .directions_info table .dirseg-sub { font-size: 0.8em; }
+.gis_map .directions_info table td[jseval='this.innerHTML = Distance.html'] { font-size: 0.8em; color: #777; }
+.gis_map .directions_info .direction { display: block; }
+.gis_map .directions_info .subnote { display: block; }
+.gis_map .directions_info .distance { position: absolute; background: white; bottom: -6px; right: 0; color: #c7c6c6; font: 0.714em Arial, Helvetica, sans-serif; padding: 0 0 0 10px; }
+.gis_map .directions_info div[jseval='this.innerHTML = $Route.summaryHtml'] { background-color: white; float: right; font-size: 0.7em; margin: -10px 0 0 0; padding: 0 12px 0 10px; }
+
+.gis_map .directions_form { float: right; padding: 0; }
+.gis_map .directions_form input { padding: 0 30px 0 10px; color: #373737; font: 0.8em Arial, Helvetica, sans-serif; height: 20px; }
+.gis_map .directions_form a { position: relative; top: 3px; }
+.gis_map .directions_form input[type='image'] { position: relative; top: 4px; margin: 0 7px; padding: 0; }
+.gis_map a.btn_getdirections { width: 131px; background: url(../imgs/btn_directions.gif); float: left; clear: both; height: 27px; color: white; text-decoration: none; font: normal 0.95em 'UbuntuLight', Arial, Helvetica, Sans-Serif; padding: 8px 0 0 8px; margin: 15px 0 0 0; }
+.gis_map input.btn_getdirections { width: 138px; background: url(../imgs/btn_directions.gif); height: 35px; float: left; clear: both; color: white; text-decoration: none; font: normal 0.95em 'UbuntuLight', Arial, Helvetica, Sans-Serif; padding: 0 0 0 9px; margin: 15px 0 0 0; line-height: 2.3em; border: none; text-align: left;  }
+.gis_map .gis_map_directions .directions_form h4 { font: normal 1.6em 'UbuntuLight', Arial, Helvetica, Sans-Serif; color: #373737; margin: 0 0 25px 0; line-height: 1.05em; float: none; }
+
+
+/*** DIFFERENT WIDTHS FOR DIRECTIONS ACCORDING TO CONTAINER ***/
+#topcontainer .gis_map .gis_map_directions h4 { width: 565px; }
+#topcontainer .gis_map .directions_info { width: 580px; height: 160px; overflow: hidden; }
+#topcontainer .gis_map .scroll_wrapper { width: 580px; }
+#topcontainer .gis_map .directions_info ol { width: 530px; }
+#topcontainer .gis_map .directions_form { width: 320px; }
+#topcontainer .gis_map .directions_form input[type='image'] { width: 15px; }
+#topcontainer .gis_map .directions_inputs input { width: 95px; }
+#topcontainer .gis_map .directions_inputs { margin: 10px 0 0 0; }
+
+#topcontainer .gis_map .gis_map_directions .directions_form h4 { width: 190px; }
+#topcontainer .gis_map .gis_map_directions .directionsWalk { border: none; background: url(../imgs/icon_walk.jpg) no-repeat left bottom; padding: 0; line-height: 1.6em; color: #c1c1c1; cursor: pointer; width: 95px; outline: 0;}
+#topcontainer .gis_map .gis_map_directions .directionsCar { border: none; background: url(../imgs/icon_car.jpg) no-repeat left bottom; padding: 0; line-height: 1.6em; color: #c1c1c1; cursor: pointer; width: 95px; outline: 0; }
+#topcontainer .gis_map .gis_map_directions .active { background-position: left top; color: Black; }
+
+
+#sub-middle-panel .gis_map .gis_map_directions h4 { width: 350px; font: normal 1.875em 'UbuntuLight', Arial, Helvetica, Sans-Serif; }
+#sub-middle-panel .gis_map .directions_info { width: 390px; padding: 2px 0 0 0; }
+#sub-middle-panel .gis_map .scroll_wrapper { width: 390px; height: 150px; overflow: hidden; }
+#sub-middle-panel .gis_map .directions_info ol { width: 325px; }
+#sub-middle-panel .gis_map .directions_info ol li { font-weight: normal; }
+#sub-middle-panel .gis_map .directions_form { width: 240px; }
+#sub-middle-panel .gis_map .directions_form input { width: 95px; height: auto; }
+#sub-middle-panel .gis_map .directions_form input[type='image'] { width: 15px; height: auto; padding: 0; border: 0; }
+#sub-middle-panel .gis_map .btn_getdirections { width: 131px; font-size: 1.25em; }
+#sub-middle-panel .gis_map .gis_map_directions .directions_form h4 { width: 190px; }
+#sub-middle-panel .gis_map .distance { font-size: 0.95em; }
+
+
+
+/* BUBBLE CSS IN MAP */
+/* #topcontainer .gis_map { overflow: hidden; } */
+#topcontainer .gis_map .infoWindow { position: absolute; left: 80px; z-index: 25; border: none; width: 368px; top: -9999px; display: none; }
+#topcontainer .gis_map .infoWindow .close { position: absolute; top: -10px; right: 10px; }
+#topcontainer .gis_map .infoWindow .infoWindowWrapper { position: relative; float: left; background: url(../imgs/map_bubble.gif) repeat-y left top; padding: 0 20px 0 20px;/* width: 100%;
+	height: 100%; */
+}
+#topcontainer .gis_map .infoWindow .infoWindowImage { float: left; margin: 0 10px 0 0; max-width: 158px; }
+#topcontainer .gis_map .infoWindow .infoWindowDescription { float: left; width: 328px; }
+#topcontainer .gis_map .infoWindow .infoWindowButtons { color: black; }
+#topcontainer .gis_map .infoWindow .infoWindowSummary { font: 0.8em/1.15em 'UbuntuRegular', Arial, Helvetica, Sans-Serif; }
+#topcontainer .gis_map .infoWindow .infoWindowDescription h3 { font: 1em 'UbuntuBold', Arial, Helvetica, Sans-Serif; color: #c40807; margin: 0; }
+#topcontainer .gis_map .infoWindow .infoWindowHowToGetThere { float: left; clear: both; width: 100%; }
+#topcontainer .gis_map .infoWindow .infoWindowHowTo { float: left; clear: both; width: 100%; margin: 0 0 10px 0; }
+#topcontainer .gis_map .infoWindow .infoWindowHowTo h4 { font: 0.85em 'UbuntuRegular', Arial, Helvetica, Sans-Serif; color: #c40807; margin: 0; }
+#topcontainer .gis_map .infoWindow .infoWindowHowTo span { font: 0.75em 'UbuntuRegular', Arial, Helvetica, Sans-Serif; }
+#topcontainer .gis_map .infoWindow .infoWindowBottom { /*position: absolute;
+	bottom: 0;*/
+	margin: 10px 0 0 0; float: left; clear: both; width: 100%; }
+#topcontainer .gis_map .infoWindow .infoWindowButtons { float: left; width: 100%; }
+#topcontainer .gis_map .infoWindow .infoWindowDirections { background: url(../imgs/icon_directions.gif) no-repeat left 2px; padding: 0 0 0 20px; color: black; font-size: 0.7em; line-height: 1.5em; text-decoration: none; }
+#topcontainer .gis_map .infoWindow .infoWindowDirections:hover { text-decoration: underline; }
+#topcontainer .gis_map .infoWindow .infoWindowReadMore { background: url(../imgs/icon_readmore.gif) no-repeat right 5px; padding: 0 10px 0 0; color: black; font-size: 0.7em; line-height: 1.5em; text-decoration: none; }
+#topcontainer .gis_map .infoWindow .infoWindowReadMore:hover { text-decoration: underline; }
+#topcontainer .gis_map .infoWindow .infoWindowBottomBox { background: url(../imgs/map_bubble.png) left bottom; height: 20px; width: 368px; float: left; }
+#topcontainer .gis_map .infoWindow .infoWindowTopBox { background: url(../imgs/map_bubble.png) left top; height: 20px; width: 368px; float: left; }
+
+.gis_map .directions_inputs div { display: inline; }
+
+.gis_map .close { position: absolute; top: 2px; right: 10px; }
+
+.tooltip { position: absolute; background: url(../imgs/blk70.png); -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; white-space: nowrap; font-size: 0.75em; color: White; padding: 5px; z-index: 1000;}
+.tooltip .tooltipTopLeft { float: left; width: 10px; height: 10px; background: url(../imgs/rounded_tooltip.html) 0 0; }
+.tooltip .tooltipTop { float: left; height: 10px; background: black; }
+.tooltip .tooltipTopRight { float: left; width: 10px; height: 10px; background: url(../imgs/rounded_tooltip.html) 10px 0; }
+.tooltip .tooltipBottomLeft { float: left; width: 10px; height: 10px; background: url(../imgs/rounded_tooltip.html) 0 10px; clear: both; }
+.tooltip .tooltipBottom { float: left; height: 10px; background: black; }
+.tooltip .tooltipBottomRight { float: left; width: 10px; height: 10px; background: url(../imgs/rounded_tooltip.html) 10px 10px; }
+.tooltip .tooltipContent { color: white; float: left; clear: both; padding: 5px; }
+
+.ajaxloader { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: #000 url(../imgs/maploader.gif) no-repeat 50% 50%; z-index: 100; display: none; opacity: 0; }
+
+
+#panel_emailmap {
+	width: 850px;
+	background: white;
+	font-size: 1em;
+	float: left;
+}
+#panel_emailmap ul {
+	list-style: none;
+	padding: 20px;
+	margin: 0;
+	float: left;
+}
+#panel_emailmap ul li {
+	position: relative;
+	padding: 0 0 0 150px;
+}
+#panel_emailmap ul li.email_fromname{
+	margin: 0 0 5px 0;
+}
+#panel_emailmap ul li.email_fromemail{
+	margin: 0 0 20px 0;
+}
+#panel_emailmap ul li.email_toname {
+	margin: 0 0 5px 0;
+}
+#panel_emailmap ul li.email_message{
+	margin: 20px 0 0 0;
+}
+#panel_emailmap ul li input{
+	border: 1px solid #CCCCCC;
+    color: #666666;
+    font: bold 0.9em "Arial, Helvetica",sans-serif;
+	width: 260px;
+}
+#panel_emailmap ul li textarea{
+	border: 1px solid #CCCCCC;
+    color: #666666;
+    font: bold 0.9em "Arial, Helvetica",sans-serif;
+	width: 256px;
+	height: 120px;
+}
+#panel_emailmap h3{
+	font: 1.125em 'UbuntuLight', Arial, Helvetica, Sans-Serif;
+	color: white;
+	display: block;
+	background: #1F1F1F;
+	padding: 0 0 10px 10px;
+	margin: 0;
+}
+#panel_emailmap .close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 11px;
+	height: 11px;
+	background: url(../imgs/btn_close.png) no-repeat;
+	display: block;
+}
+#panel_emailmap span {
+	font-size: 0.95em;
+	display: inline-block;
+	width: 150px;
+	top: 1px;
+	left: 0;
+	position: absolute;
+}
+#panel_emailmap .buttonscontainer {
+	padding: 0 20px 20px 20px;
+	float: left;
+	clear: both;
+}
+#panel_emailmap .buttonscontainer .btn_send {
+	background: url("../imgs/btn_sendemail.gif") right;
+    clear: both;
+    color: white;
+    float: left;
+    font: 0.85em 'UbuntuLight',Arial,Helvetica,Sans-Serif;
+    height: 35px;
+    padding: 0 40px 0 0;
+    text-decoration: none;
+    width: 95px;
+    border: none;
+    text-align: right;
+}
+#panel_emailmap .staticMaps 
+{
+    padding: 22px 0 0 20px;
+    float: left;
+}
+#panel_emailmap .staticMaps img 
+{
+    width: 345px;
+}
+#panel_savemap {
+	width: 380px;
+	background: white;
+	font-size: 1em;
+	float: left;
+}
+#panel_savemap h3{
+	font: 1.125em 'UbuntuLight', Arial, Helvetica, Sans-Serif;
+	color: white;
+	display: block;
+	background: #1F1F1F;
+	padding: 0 0 10px 10px;
+	margin: 0;
+}
+#panel_savemap .close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 11px;
+	height: 11px;
+	background: url(../imgs/btn_close.png) no-repeat;
+	display: block;
+}
+#panel_savemap ul {
+	padding: 20px 20px 10px 20px;
+	margin: 0;
+	list-style: none;
+	float: left;
+}
+#panel_savemap ul li {
+	float: left;
+	margin: 0 0 10px 0;
+}
+#panel_savemap ul input.newname {
+	margin: 0 0 0 54px;
+	border: 1px solid #CCCCCC;
+    color: #666666;
+    font: bold 0.9em "Arial, Helvetica",sans-serif;
+	width: 180px;
+}
+#panel_savemap ul label { 
+	font-size: 0.95em;
+}
+#panel_savemap ul select {
+	margin: 0 0 0 20px;
+	border: 1px solid #CCCCCC;
+    color: #666666;
+    font: bold 0.9em "Arial, Helvetica",sans-serif;
+	width: 182px;
+}
+#panel_savemap ul select option{
+	color: #666666;
+	font-weight: normal;
+}
+#panel_savemap .buttonscontainer {
+	padding: 0 0 20px 20px;
+	float: left;
+}
+#panel_savemap .buttonscontainer .btn_save {
+	background: url("../imgs/btn_savemap.gif") repeat scroll 0 0 transparent;
+    clear: both;
+    color: white;
+    float: left;
+    font: 0.95em 'UbuntuLight',Arial,Helvetica,Sans-Serif;
+    height: 27px;
+    padding: 8px 8px 27px 14px;
+    text-decoration: none;
+    width: 117px;
+    border: none;
+}
+#panel_savemap .buttonscontainer .managelink {
+	float: left;
+	clear: both;
+	margin: 10px 0 0 0;
+	font-size: 0.7em;
+}
+#plantrip a { color:#373737; text-decoration: none; }
+.gis_maperror {	position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url(../imgs/blackbktext.png); z-index: 101; }
+.gis_maperror .gis_maperrorbox { border: 10px solid #1F1F1F; background: white; float: left; position: absolute; }
+.gis_maperror .gis_maperrorbox h3 { font: 1.125em 'UbuntuLight', Arial, Helvetica, Sans-Serif; color: white; display: block; background: #1F1F1F; padding: 0 0 10px 10px; margin: 0; }
+.gis_maperror .gis_maperrorbox p { margin: 0; padding: 13px; font-size: 0.9em; }
+.gis_maperror .btn_close { margin: 0 0 10px 10px; }
+
+#gis_map .searchBox.textfield{
+    outline: none;
+}
