@@ -1,6 +1,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
 
 <!-- Mirrored from www.visitmalta.com/cn/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Apr 2017 15:45:58 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
@@ -69,7 +70,7 @@
 <div id="siteContainer">
         <div id="siteShadow">
             <div id="siteArea">
-                <div id="siteWrapper">
+                <div id="siteWrapper"><div th:include="head :: pagehead"></div>
 
     <div id="mainpage_content">
         <div class="mainpage_wrapper">
@@ -507,5 +508,5 @@
 
 
 
-</body>
+<!-- 插入页脚 --><div th:include="feet :: pagefeet"></div></body>
 </html>

@@ -1,6 +1,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
 
 <!-- Mirrored from www.visitmalta.com/cn/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Apr 2017 15:45:58 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
@@ -72,7 +73,7 @@
 <div id="siteWrapper">
 
 <!-- 插入页头 -->
-<object style="border:0px" type="text/x-scriptlet" data="pagehead.html" width=101% height=200></object>
+<div th:include="head :: pagehead"></div>
 
 <div id="mainpage_content">
         <div class="mainpage_wrapper">
@@ -1637,10 +1638,8 @@ var daysArray = ['星期日', '星期一', '星期二', '星期三', '星期四'
       </div>
        </div>
         </div>
-        
-        <!-- 插入页脚 -->
-        <object style="border:0px" type="text/x-scriptlet" data="pagefeet.html" width=100% height=480></object>
-</body>
+      
+<!-- 插入页脚 --><div th:include="feet :: pagefeet"></div></body>
 
 <!-- Mirrored from www.visitmalta.com/cn/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Apr 2017 15:59:23 GMT -->
 </html>

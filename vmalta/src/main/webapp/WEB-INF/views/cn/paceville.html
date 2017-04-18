@@ -1,6 +1,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Visit Malta</title>
@@ -14,5 +15,5 @@
             </div>
             <div class="logo"><a href="/"><img src="/imgs/logo-visitmalta.jpg" alt="Visit Malta" title="Visit Malta Logo" class="logovisitmalta" border="0" /></a></div>
             <div class="clear"></div>
-        </body>
+        <!-- 插入页脚 --><div th:include="feet :: pagefeet"></div></body>
 </html>

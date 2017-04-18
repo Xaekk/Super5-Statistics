@@ -1,7 +1,8 @@
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org">
 
 <!-- Mirrored from www.visitmalta.com/cn/error.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Apr 2017 16:19:30 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
@@ -18,7 +19,7 @@
         </div>
         <div class="logo"><a href="http://www.visitmalta.com/"><img src="../imgs/logo-visitmalta.jpg" alt="Visit Malta" title="Visit Malta Logo" class="logovisitmalta" border="0" /></a></div>
         <div class="clear"></div>
-    </body>
+    <!-- 插入页脚 --><div th:include="feet :: pagefeet"></div></body>
 
 <!-- Mirrored from www.visitmalta.com/cn/error.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Apr 2017 16:19:31 GMT -->
 </html>
